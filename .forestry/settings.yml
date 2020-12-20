@@ -29,6 +29,9 @@ sections:
 - type: directory
   path: _pets
   label: Pets
+- type: directory
+  path: _proposals
+  label: Proposals
   create: documents
   match: "*.md"
 - type: heading
