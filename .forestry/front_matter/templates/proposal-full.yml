@@ -1,4 +1,65 @@
 ---
 label: proposal-full
 hide_body: true
-fields: []
+fields:
+- name: building_name
+  type: text
+  config:
+    required: true
+  label: Building Name
+  description: The buildings name
+- name: building_ocp
+  type: number
+  label: Building OCP
+  description: enter the buildings condo corp number.
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: building_type
+  type: select
+  default: Apartment
+  config:
+    required: true
+    options:
+    - Apartment
+    - Townhome
+    - Bareland
+    - Home Owners
+    - Commercial
+    - Other
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Building Type
+  description: Select a building type
+- name: number_of_units
+  type: number
+  label: Number of Units
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+    required: true
+- name: building_address
+  type: text
+  config:
+    required: false
+  label: Building Address
+- name: price
+  type: number
+  label: Price
+  description: The price per month with out GST
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
