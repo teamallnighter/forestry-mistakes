@@ -2,6 +2,15 @@
 label: proposal-full
 hide_body: true
 fields:
+- name: date_of_proposal
+  type: datetime
+  label: date of proposal
+  description: Enter the date of the proposal
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
 - name: building_name
   type: text
   config:
@@ -63,3 +72,12 @@ fields:
     min: 
     max: 
     step: 
+- name: proposal_good_until
+  type: datetime
+  label: proposal good until
+  description: enter the date the proposal expires
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
