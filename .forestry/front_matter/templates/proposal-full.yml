@@ -17,6 +17,12 @@ fields:
     required: true
   label: Building Name
   description: The buildings name
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: image
+  description: upload an image
 - name: building_ocp
   type: number
   label: Building OCP
